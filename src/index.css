@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100%;
+  touch-action: manipulation;
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  margin: 0;
+  line-height: 1.25;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  white-space: pre-line;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel .carousel-status {
+  display: none;
+}
+.carousel .control-dots .dot:not(.selected) {
+  background-color: #FFF;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+
+.carousel .control-dots .dot.selected {
+  background-color: #FFCC01;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
